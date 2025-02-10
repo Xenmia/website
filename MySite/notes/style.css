@@ -47,7 +47,8 @@ main {
     justify-content: space-between;
     border-radius: 10px;
     height: fit-content;
-    width: 30vw;
+    width: 80vw;
+    max-width: 700px;
 }
 
 .writeArea {
@@ -98,6 +99,30 @@ main {
     font-size: large;
 }
 
+.delBtn {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-color: #f34848;
+    border-color: transparent;
+    border-radius: 5px;
+    margin: 10px;
+    text-indent: -999999999999999px;
+    transition: all .2s ease-in-out 
+}
+
+.delBtn:hover {
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#delAllBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 .btn {
     height: 50px;
     width: 50px;
@@ -107,15 +132,17 @@ main {
     border-radius: 5px;
     margin: 10px;
     text-indent: -999999999999999px;
+    transition: all .2s ease-in;
 }
 
 .btn:hover {
     background-color: #afafafa2;
+    transform: scale(1.2,1.2);
+    transition: all .2s ease-in-out;
     cursor: pointer;
 }
 
 .buttons {
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }

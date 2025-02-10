@@ -18,6 +18,7 @@
         </nav>
     </header>
     -->
+    <button class="box delBtn" type="button" id="delAllBtn" style="background-image: url(images/deleteWhite.svg);">Delete all notes</button>
     <header>
         <button class="box btn" type="button" id="writeBtn" style="background-image: url(images/write.svg);">Write task</button>
     </header>
@@ -28,14 +29,26 @@
         <div class="blur" id="writingGui">
             <div class="writeDiv">
                 <textarea class="writeArea" name="writingArea" id="writeArea" placeholder="Write your note here..."></textarea>
-                <div class="buttonsDiv">
+                <div class="buttons">
                     <button class="box btn" type="button" id="doneBtn" style="background-image: url(images/add.svg);">Done</button>
-                    <button class="box btn" type="button" id="cancelBtn" style="background-image: url(images/cancel.svg);">Cancel</button>
+                    <button class="box delBtn" type="button" id="cancelBtn" style="background-image: url(images/cancel.svg);">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="confirmationGuiTemplate">
+        <div class="blur" id="confirmationGui">
+            <div class="box" style="border-radius: 10px; background-color: black;">
+                <h1 style="padding: 10px; margin: 1vw;">Are you sure?</h1>
+                <div style="display: flex; justify-content: space-evenly; margin-bottom: 10px;">
+                    <button class="box delBtn" type="button" id="confirmDelBtn" style="background-image: url(images/deleteWhite.svg);">Delete ALL notes</button>
+                    <button class="box btn" type="button" id="cancelDelBtn" style="background-image: url(images/cancel.svg);">Cancel deletion</button>
                 </div>
             </div>
         </div>
     </template>
     <!--script src="main.js"></script-->
+    <script src="eventListeners.js"></script>
     <script src="updateColumns.js"></script>
     <script src="updateColumnsNum.js"></script>
     <script src="updateData.js"></script>
