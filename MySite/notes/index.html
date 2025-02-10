@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type=”image/svg+xml” href="./images/favicon.svg">
+    <title>Tasks</title>
+</head>
+<body id="body">
+    <div id="columnsNum"></div>
+    <!--
+    <header>
+        <textarea class="box" name="textInput" id="textAreaInput" rows="10" style="resize: none" placeholder="Type your task here..."></textarea>
+        <nav class="buttons">
+            <button class="box btn" id="btnInput" type="button" style="background-image: url(images/add.svg);"></button>
+            <button class="box btn" type="button" style="background-image: url(images/delete.svg);"></button>
+        </nav>
+    </header>
+    -->
+    <header>
+        <button class="box btn" type="button" id="writeBtn" style="background-image: url(images/write.svg);">Write task</button>
+    </header>
+    <main id="mainDiv">
+        
+    </main>
+    <template id="writingGuiTemplate">
+        <div class="blur" id="writingGui">
+            <div class="writeDiv">
+                <textarea class="writeArea" name="writingArea" id="writeArea" placeholder="Write your note here..."></textarea>
+                <div class="buttonsDiv">
+                    <button class="box btn" type="button" id="doneBtn" style="background-image: url(images/add.svg);">Done</button>
+                    <button class="box btn" type="button" id="cancelBtn" style="background-image: url(images/cancel.svg);">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!--script src="main.js"></script-->
+    <script src="updateColumns.js"></script>
+    <script src="updateColumnsNum.js"></script>
+    <script src="updateData.js"></script>
+</body>
+</html>

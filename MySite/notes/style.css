@@ -1,0 +1,119 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(29, 29, 29);
+    margin: 0;
+}
+
+#columnsNum {
+    width: calc(0px + 100vw / 370);
+    height: 0;
+    position: absolute;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    margin: 0;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+::placeholder {
+    font-family: Helvetica, Arial, sans-serif;
+    color: gray;
+}
+
+.blur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100000;
+}
+
+.writeDiv {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: fit-content;
+    width: 30vw;
+}
+
+.writeArea {
+    background-color: rgb(31, 31, 31);
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 10px;
+    color: white;
+    resize: none;
+    border: none;
+    height: 80vh;
+    width: 80%;
+}
+
+.writeArea:focus {
+    outline: none;
+    border: none;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    height: fit-content;
+    min-width: 350px;
+}
+
+.note {
+    background-color: black;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.box {
+    border-color: rgb(88, 88, 88);
+    border-radius: 0;
+    border-width: 1px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: large;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    margin: 10px;
+    text-indent: -999999999999999px;
+}
+
+.btn:hover {
+    background-color: #afafafa2;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

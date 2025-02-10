@@ -1,0 +1,64 @@
+@keyframes image-scroll-left{}
+
+body {
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+
+
+.navigation ul {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation a {
+    align-self: center;
+    color: white;
+    transition: color 0.5s;
+    margin-right: 15px;
+    font-size: larger;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+    color:rgb(214, 66, 98)
+}
+
+header .logo a{
+    background-image: url("images/logo.svg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    text-indent: -9999999999px;
+    display: inline-block;
+}
+
+
+
+.images {
+    display: flex;
+    background-color: blue;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.images div{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
