@@ -83,7 +83,9 @@ main {
     border-radius: 10px;
     margin: 5px 0 5px 0;
     padding: 10px;
-    width: fit-content;
+    width: 350px;
+    word-wrap: break-word;
+    hyphens: auto;
     height: fit-content;
 }
 

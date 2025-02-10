@@ -52,7 +52,3 @@ function choseColumn(colH) { // Util to select the col to append the note to (ch
     }
     return col;
 }
-
-function getColNumNow() {
-    
-}
