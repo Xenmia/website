@@ -6,7 +6,7 @@ body {
 }
 
 #columnsNum {
-    width: calc(0px + 100vw / 370);
+    width: clamp(1px, calc(0px + 100vw / 370), 9999999px);
     height: 0;
     position: absolute;
 }
